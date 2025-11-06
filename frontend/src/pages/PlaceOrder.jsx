@@ -67,7 +67,7 @@ const PlaceOrder = () => {
         // Api calls for cod
         case "cod":
           const response = await axios.post(
-            backendUrl + "api/order/place",
+            backendUrl + "/api/order/place",
             orderData,
             { headers: { token } }
           );
